@@ -1,24 +1,29 @@
-post_text = "1"
+post_title = "Питоны крутые змеи"
+post_text = "Питоны зеленые и еще это круто"
 is_published = True
-is_premium = False
-has_subscription = False
+is_draft = False
 
-print("есть ли статься для отоброажения: ", bool(post_text))
+print(f"Пост {post_title}")
 
-can_show = post_text and is_published and ( is_premium or has_subscription )
 
-if can_show:
-    print(f"Показываем тектс: {post_text}")
+guest_age = int(input("Введите ваш возраст "))
+is_adult_only = True
+is_allow_view = True
+
+if is_adult_only:
+    #print("Ограничений нет" if guest_age >= 18 else "Доступ запрещен")
+    if guest_age >= 18:
+        print("Доступ разрешен")
+    else:
+        print("Доступ запрещен")
+        is_allow_view = False
 else:
-    print("NO")
+    print("Ограничений нет")
 
-arthur_name = input("name : ")
-display_name = arthur_name or "no_name"
-
-print(f"Arthur Name : {display_name}")
-
-age = int(input("age : "))
-if 0 <= age > 100:
-    print("ok")
-else:
-    print("no")
+if is_allow_view:
+    if is_published and not is_draft:
+       print(f"Текст {post_text}")
+    elif is_draft:
+        print("Статья еще черновик")
+    else:
+        print("Пост скрыт")
