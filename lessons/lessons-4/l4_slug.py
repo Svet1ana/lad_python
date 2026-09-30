@@ -15,8 +15,9 @@ def build_slug(title: str) -> str:
         result = result.replace("--", "-")
 
     result = result.strip("-")
-    print(result)
     return result
 
-build_slug("Parabola-    --- skfvkldf--sdnsakg--")
+my_title = "Parabola-    --- skfvkldf--sdnsakg--"
+print(my_title)
+print(build_slug(my_title))
 
