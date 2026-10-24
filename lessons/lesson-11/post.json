@@ -1,0 +1,11 @@
+{
+  "title": "My first post",
+  "author": "Agent",
+  "tags": [
+    "Python",
+    "JSON",
+    "Files"
+  ],
+  "published": true,
+  "views": 120
+}
