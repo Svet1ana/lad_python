@@ -31,7 +31,7 @@ def main() -> None:
     #     print(f"{num}. {article['title']}")
 
     # Внимательно поигарться с этимии двумя варинатами печати
-    print(f"current list of articles:")ю
+    print(f"current list of articles:")
     for article in enumerate(articles, start=1):
         print(f" {article[0]} . {article[1]['title']} - {article[1]['author']}")
 
