@@ -1,4 +1,3 @@
-from sysconfig import is_python_build
 
 post_title = "Python"
 post_text = "text"
@@ -10,9 +9,9 @@ print(f"Post : {post_title}")
 if is_published and not is_draft:
     print(f"Text : {post_text}")
 elif is_draft:
-    print(f" It is draft")
+    print(" It is draft")
 else:
-    print(f" It is hide ")
+    print(" It is hide ")
 
 guest_age = int(input("Guest Age : "))
 is_adult_only = False
