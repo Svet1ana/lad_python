@@ -1,7 +1,6 @@
 import json
 from pathlib import Path
 
-
 DATA_FILE = Path("articles.json")
 
 
@@ -31,7 +30,7 @@ def main() -> None:
     #     print(f"{num}. {article['title']}")
 
     # Внимательно поигарться с этимии двумя варинатами печати
-    print(f"current list of articles:")
+    print("current list of articles:")
     for article in enumerate(articles, start=1):
         print(f" {article[0]} . {article[1]['title']} - {article[1]['author']}")
 

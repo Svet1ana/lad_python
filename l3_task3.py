@@ -1,5 +1,3 @@
-from main import name
-
 users = ["Вася", "Петя", "Маша", "Коша"]
 scores = [95, 88, 79]
 
