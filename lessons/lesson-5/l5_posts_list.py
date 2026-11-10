@@ -1,5 +1,3 @@
-from random import choice
-
 posts = [
     ["2026-02-10", "Как установить uv", "Инструментарий"],
     ["2026-02-14", "Списки в Python", "Python"],

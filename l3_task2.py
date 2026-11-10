@@ -1,6 +1,5 @@
 from random import randint
 
-
 secret = randint(1, 11)
 attempts = 0
 while True:

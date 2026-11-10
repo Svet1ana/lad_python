@@ -1,4 +1,5 @@
-from blog import data, ui
+from blog import ui
+
 
 def main() -> None:
     while True:

@@ -1,6 +1,3 @@
-from asyncio import events
-from sys import flags
-
 numbers = list(range(1, 11))
 print(numbers)
 
