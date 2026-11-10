@@ -23,7 +23,7 @@ def is_valid_email(email):
 
 
 print(is_valid_email("sveta@example.ru"))     # True
-print(is_valid_email("qa@blog.example.dev"))  # True
+print(is_valid_email("prog@blog.example.dev"))  # True
 print(is_valid_email("sveta@@example.ru"))    # False: два @
 print(is_valid_email("@example.ru"))          # False: пусто слева
 print(is_valid_email("sveta@example"))        # False: нет точки

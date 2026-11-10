@@ -1,4 +1,4 @@
-text = "Это текст с лишними пробелами"
+text = "  Это текст с лишними    пробелами  "
 words = text.split()
 print(words)
 
@@ -9,7 +9,7 @@ for word in words:
     if len(word) > len(longest):
         longest = word
 
-print(longest)
+print(f"Самое длинное слово в тексте -  {longest}")
 
 new_text = " ".join(words)
 print(new_text)
